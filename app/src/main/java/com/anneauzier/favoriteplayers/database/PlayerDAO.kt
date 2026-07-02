@@ -10,6 +10,11 @@ import com.anneauzier.favoriteplayers.model.Player
 // É a interface que define as operações SQL
 // Relacionado ao Room -> banco de dados local
 
+
+//A sigla DAO significa Data Access Object (Objeto de Acesso a Dados).
+// No ecossistema do Room, os DAOs são as interfaces onde você define o "cardápio"
+// de operações que o seu aplicativo pode realizar no banco de dados.
+
 @Dao
 interface PlayerDAO {
     @Query("""
